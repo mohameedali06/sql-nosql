@@ -1,0 +1,59 @@
+#array
+==>adding element
+const numbers=[1,2,3];
+//end
+numbers.push(4,5);
+console.log(numbers);
+//beginning
+numbers.unshift(1,2);
+console.log(numbers);
+//middle
+numbers.splice(2,2,"x","y");
+console.log(numbers);
+
+==>finding primitive element
+const numbers=[1,2,3,1,4];
+//finding first occurnce index
+console.log(numbers.indexOf(1));
+console.log(numbers.indexOf(1,1));
+//finding last occurnce index
+console.log(numbers.lastIndexOf(1));
+//checking the presence 
+console.log(numbers.indexOf(1) !== -1);
+console.log(numbers.includes(1));
+
+==>finding object element
+const students=[
+    {id:1,name:'john'},
+    {id:2,name:'max'},
+];
+const student = students.find(function (student) {
+    return student.name ==="max"; 
+});
+console.log(student);
+//funcion using arrow
+const student = students.find(student => student.name === "john");
+    
+==>removing element
+const numbers =[1,2,3,4,5];
+
+//from end
+const a =numbers.pop();
+console.log(numbers);
+console.log(a);
+// from beginning
+const first =numbers.shift();
+console.log(first);
+console.log(numbers);
+// from middle
+numbers.splice(2,1);
+console.log(numbers);
+
+==>combining and spliting element
+const first =[1,2,3];
+const second =[4,5];
+const combine= first.concat(second);
+//combining
+console.log(combine);
+//splitting
+console.log(combine.slice(2,4));
