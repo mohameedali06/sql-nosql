@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+.detail{
+   
+    background-image: url("image/product bg.png");
+} 
+font{
+    color:peachpuff;
+}
+.text h2{
+    font-family:Roboto;
+	font-weight: bold;
+	margin:40px;
+	font-size: 2rem;
+    text-align: center;
+	letter-spacing: 3px;
+    color:darkorange;
+    text-transform: uppercase;
+}
+.img1{
+    height: 150px;
+    width: 50%;
+    box-sizing: border-box;
+}
+.img1 img{
+    width: 190%;
+    height: 112%;
+    object-fit:contain;
+}

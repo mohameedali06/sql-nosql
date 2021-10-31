@@ -1,0 +1,72 @@
+<!DOCTYPE html>   <!-- bydefault --><!--dtd: To validate the tags we r using-->
+<html>
+     <head><meta charset="UTF-8">  <!-- unicode transformation format-->
+        <title>Login Page</title>
+        <link rel="shortcut icon" href="image/logo.png">
+        <link rel="stylesheet" href="account.css">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+
+              <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+              <script crossorigin="anonymous" src="https://kit.fontawesome.com/70a642cd7c.js"></script>
+
+              <style>
+                  span{
+                      color: red;
+                  }
+              </style>
+            
+</head>    
+<body>    
+
+    <nav class="head2">
+        <ul>
+            <li><a href="index.html" class="head">Home</a></li>
+            <li><a href="index.html" class="head">Our Product</a></li>
+            <li><a href="about.html" class="head" >About Us</a></li>
+            <li><a href="contact.html" class="head" >Contact Us</a></li>
+            <li><a href="account.html"  class="head">Account</a></li>
+        </ul>
+    </nav>
+
+    <div class="side-box">
+
+      <!--search-------->
+      <div class="search">
+          <!--icon-------->
+          <i class="fas fa-search"></i>
+          <input type="" placeholder="Search">
+      </div>
+  </div>
+
+
+
+
+    <h2>Login <font>Page</font></h2><br>    
+    <div class="login">    
+    <form id="login" action="success.html" onsubmit="return validateform()"  novalidate>
+        <tr>
+        <td><label><b>User Name</b></label></td>   
+        <td><input type="text" name="uname" id="Uname" placeholder="Username" onblur="validate1()"></td> 
+       </tr>
+        <tr><td></td><td><span id="error1"></span></td></tr>  
+        <br><br>
+        <tr>
+        <td><label><b>Password</b></label> </td>   
+        <td><input type="Password" name="Passwrd" id="Pass" placeholder="Password" onblur="validate2()"> </td> 
+        </tr>
+        <tr><td></td><td><span id="error2"></span></td></tr>  
+        <br><br>
+        <input type="submit" name="log" id="log" value="Submit"><br><br>
+        <input type="reset" name="log1" id="log" value="Reset">  
+
+        <br><br>      
+        <br><br>   
+        <a href="#" class="i1">Create Account?</a>   
+        <br><br>   
+        <a href="#" class="i1">Forgot Password?</a>
+
+    </form>   
+    <script src="validation.js"></script>  
+</div>    
+</body>    
